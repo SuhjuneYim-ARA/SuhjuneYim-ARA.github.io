@@ -5,25 +5,63 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/>
     </head>
 
-    <!-- <div class="container">
-        
-    </div> -->
-
     <article class="pico-background-slate-500">
         <h1 align="center">ARA Engineering Development Manual</h1>
     </article>
 
-
     <details open>
         <summary role="button" class="outline secondary">Coding Convention</summary>
         <ul>
-            <li>Naming Convention</li>
+            <li>Naming Rules</li>
+            <ul>
+                <li>Variables</li>
+                <ul>
+                    <li>snake_case</li>
+                    <code style="color:deeppink">var_a, var_b, var_c, ...</code>
+                </ul>
+                <li>
+                    Methods, Classes
+                    <ul>
+                        <li>PascalCase</li>
+                        <code style="color:deeppink">RotateXY(), DrawPipe(), ...</code>
+                    </ul>
+                </li>
+                <li>Constants</li>
+                <ul>
+                    <li>UPPER_CASE</li>
+                    <code style="color:deeppink">PI = 3.14</code>
+                    <code style="color:deeppink">PI = 3.14</code>
+                </ul>
+            </ul>
+
+            <li>boolean-specific-prefix</li>
+            <ul>
+                <li>use 'is_' prefix</li>
+                <ul>
+                    <li><code style="color:deeppink">is_alive = true</code></li>
+                    <li><code style="color:deeppink">is_human = true</code></li>
+                    <li><code style="color:deeppink">is_animal = false</code></li>
+                </ul>
+            </ul>
         </ul>
     </details>
-    <!-- <div class="container">
-        <article class="pico-background-slate-600">
 
-        </article>
-    </div> -->
-
+    <details open>
+        <summary role="button" class="outline secondary">Version Control System (VCS)</summary>
+        <ul>
+            <li>Tool</li>
+            <ul>
+                <li>GitHub</li>
+                <ul>
+                    <li>Simple UI</li>
+                    <li></li>
+                </ul>
+                <li>SourceTree (optional)</li>
+                <ul>
+                    <li>Graph Visualisation</li>
+                    <li></li>
+                </ul>
+            </ul>
+        </ul>
+    </details>
 </html>
