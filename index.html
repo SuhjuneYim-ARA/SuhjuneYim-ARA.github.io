@@ -6,13 +6,30 @@
     </head>
 
     <article class="pico-background-slate-500">
-        <h1 align="center">ARA Engineering Development Manual</h1>
+        <h1 align="center">ARA Engineering Coding Convention</h1>
     </article>
 
     <details open>
-        <summary role="button" class="outline secondary">Coding Convention</summary>
+        <summary role="button" class="outline secondary">Coding Convention Types</summary>
         <ul>
-            <li>Naming Rules</li>
+            <li>PascalCase</li>
+            <ul>
+                <code style="color:deeppink">RandomClass, CodingConvention, RotateXY(), ...</code>
+            </ul>
+            <li>camelCase</li>
+            <ul>
+                <code style="color:deeppink">randomClass, codingConvention, rotateXY(), ...</code>
+            </ul>
+            <li>snake_case</li>
+            <ul>
+                <code style="color:deeppink">random_class, coding_convention, rotate_xy(), ...</code>
+            </ul>
+            <li>UPPER_CASE</li>
+            <ul>
+                <code style="color:deeppink">PI = 3.14, EULER_NUM = 2.718, GOLDEN_RATIO = 1.618, ...</code>
+            </ul>
+
+            <!-- <li>Naming Rules</li>
             <ul>
                 <li>Variables</li>
                 <ul>
@@ -32,36 +49,204 @@
                     <code style="color:deeppink">PI = 3.14</code>
                     <code style="color:deeppink">PI = 3.14</code>
                 </ul>
-            </ul>
+            </ul> -->
 
-            <li>boolean-specific-prefix</li>
+            <li>boolean-specific prefix</li>
             <ul>
-                <li>use 'is_' prefix</li>
+                <code style="color:deeppink">'is_'</code> prefix
                 <ul>
-                    <li><code style="color:deeppink">is_alive = true</code></li>
+                    <li><code style="color:deeppink">is_alive = false</code></li>
                     <li><code style="color:deeppink">is_human = true</code></li>
                     <li><code style="color:deeppink">is_animal = false</code></li>
                 </ul>
             </ul>
+
+            <details open>
+                <summary role="button" class="outline contrast">C#</summary>
+                <ul>
+                    <li>PascalCase</li>
+                    <ul>
+                        <li>Class, Interface, Struct, Delegate, Methods</li>
+                        <li><code style="color:deeppink">public</code> members</li>
+                    </ul>
+
+                    <li>camelCase</li>
+                    <ul>
+                        <li><code style="color:deeppink">private/internal</code> fields</li>
+                        <li>local variables, including instances of a delegate type</li>
+                    </ul>
+
+                    <li>UPPER_CASE</li>
+                    <ul>
+                        <li>Constant values</li>
+                    </ul>
+
+                    <li>Prefixes</li>
+                    <ul>
+                        <li>Interface :<code style="color:deeppink">I</code></li></li>
+                        <ul>
+                            <code style="color:deeppink">IButtonDown, IButtonUp</code></li>
+                        </ul>
+
+                        <li><code style="color:deeppink">private static</code></li>
+                        <ul>
+                            <code style="color:deeppink">private static string s_clientAddress</code>
+                        </ul>
+
+                        <li><code style="color:deeppink">private thread static</code></li>
+                        <ul>
+                            <code style="color:deeppink">[ThreadStatic]</code>
+                            <br>
+                            <code style="color:deeppink">private static TimeSpan t_timeSpan</code>
+                        </ul>
+                    </ul>
+                </ul>
+            </details>
+
+            <details>
+                <summary role="button" class="outline contrast">Python</summary>
+                <ul>
+                    <li>snake_case</li>
+                </ul>
+
+                <li>UPPER_CASE</li>
+                    <ul>
+                        <li>Constant values</li>
+                    </ul>
+            </details>
+
+            <details open>
+                <summary role="button" class="outline contrast">C++</summary>
+
+                <ul>
+                    <li>PascalCase</li>
+                    <ul>
+                        <li>Class, Struct, Interface, <code style="color: deeppink;">public</code> Methods</li>
+                    </ul>
+                    
+
+                    <li>camelCase</li>
+                    <ul>
+                        <li><code style="color: deeppink;">private</code> Methods</li></li>
+                    </ul>
+
+                    <li>UPPER_CASE</li>
+                    <ul>
+                        <li>Constant values, #define</li>
+                    </ul>
+
+                    <li>Prefixes</li>
+                    <ul>
+                        <li>Interface :<code style="color:deeppink">I</code></li></li>
+                        <ul>
+                            <code style="color:deeppink">IButtonDown, IButtonUp</code></li>
+                        </ul>
+
+                    </ul>
+                </ul>
+
+                
+            </details>
         </ul>
     </details>
 
     <details open>
-        <summary role="button" class="outline secondary">Version Control System (VCS)</summary>
+        <summary role="button" class="outline secondary">GitHub Convention</summary>
         <ul>
-            <li>Tool</li>
-            <ul>
-                <li>GitHub</li>
+
+            <details>
+                <summary role="button" class="outline secondary">GitHub Account</summary>
                 <ul>
-                    <li>Simple UI</li>
-                    <li></li>
+                    <li>{FirstName+LastName}-ARA</li>
+                    <ul>
+                        <code style="color: deeppink;">SuhjuneYim-ARA, CheolSuKim-ARA, GildongHong-ARA, ...</code>
+                    </ul>
                 </ul>
-                <li>SourceTree (optional)</li>
+            </details>
+
+
+            <br>
+            Follow Pascal case for the following:
+            <br>
+            <br>
+
+            <li>Repository</li>
+            <ul>
+                <li>Created by project leader</li>
+                <li>{Objective}</li>
                 <ul>
-                    <li>Graph Visualisation</li>
-                    <li></li>
+                    <code style="color:deeppink">RealTimeImageProcessing</code>
                 </ul>
             </ul>
+            <li>Branch</li>
+            <ul>
+                <details open>
+                    <summary><li>5 types of branches : </li></summary>
+                    <ul>
+                        <li>main</li>
+                        <ul>Production Code only</ul>
+                        <li>develop / dev</li>
+                        <ul>Development codes</ul>
+                        <li>hot fix</li>
+                        <ul>Created from main <br>
+                            Only merge into main and develop branches</ul>
+                        <li>release</li>
+                        <ul>Created from develop branch <br>
+                            Only commit bug fixes</ul>
+                        <li>feature</li>
+                        <ul>
+                            Created from develop branch <br>
+                            <code style="color:deeppink;">"Feature_" </code> prefix
+                            <ul>
+                                <li><code style="color:deeppink">Feature_CentreLine, Feature_ImageProcessing, ...</code></li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </details>
+                
+
+                <!-- <li>5 types of branches : </li>
+                <ul>
+                    <li>main</li>
+                    <ul>Production Code only</ul>
+                    <li>develop / dev</li>
+                    <ul>Development codes</ul>
+                    <li>hot fix</li>
+                    <ul>Created from main <br>
+                        Only merge into main and develop branches</ul>
+                    <li>release</li>
+                    <ul>Created from develop branch <br>
+                        Only commit bug fixes</ul>
+                    <li>feature</li>
+                    <ul>
+                        Created from develop branch <br>
+                        <code style="color:deeppink;">"Feature_" </code> prefix
+                        <ul>
+                            <li><code style="color:deeppink">Feature_CentreLine, Feature_ImageProcessing, ...</code></li>
+                        </ul>
+                    </ul>
+                </ul> -->
+                
+            </ul>
+            <li>Directory</li>
+            <ul>
+                <li><code style="color:deeppink">/Scripts/Library/ImageProcessing</code></li>
+            </ul>
+            <li>File</li>
+            <ul>
+                <li><code style="color:deeppink">OpenSourceLibrary.py, MyLibrary.cs, ...</code></li>
+            </ul>
+            Reference Image
+            <br>
+            <img src="GitFlow.png" alt="" style="width: 50%;">
+            
+        </ul>
+    </details>
+
+    <details>
+        <summary role="button" class="outline secondary">Version Control System (VCS)</summary>
+        <ul>
+            <li>GitHub</li>
         </ul>
     </details>
 </html>
