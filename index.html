@@ -28,7 +28,7 @@
             <ul>
                 <code style="color:deeppink">PI = 3.14, EULER_NUM = 2.718, GOLDEN_RATIO = 1.618, ...</code>
             </ul>
-
+<!-- 
             <li>Naming Rules</li>
             <ul>
                 <li>Variables</li>
@@ -49,7 +49,7 @@
                     <code style="color:deeppink">PI = 3.14</code>
                     <code style="color:deeppink">PI = 3.14</code>
                 </ul>
-            </ul>
+            </ul> -->
 
             <li>boolean-specific prefix</li>
             <ul>
@@ -61,19 +61,19 @@
                 </ul>
             </ul>
 
-            <details open>
+            <details>
                 <summary role="button" class="outline contrast">C#</summary>
                 <ul>
                     <li>PascalCase</li>
                     <ul>
-                        <li>Class, Interface, Struct, Delegate, Methods</li>
+                        <li>Classes, Interfaces, Structs, Delegates, Methods</li>
                         <li><code style="color:deeppink">public</code> members</li>
                     </ul>
 
                     <li>camelCase</li>
                     <ul>
                         <li><code style="color:deeppink">private/internal</code> fields</li>
-                        <li>local variables, including instances of a delegate type</li>
+                        <li>local variables, including instances of a delegate types</li>
                     </ul>
 
                     <li>UPPER_CASE</li>
@@ -107,27 +107,27 @@
                 <summary role="button" class="outline contrast">Python</summary>
                 <ul>
                     <li>snake_case</li>
-                    <ul>
-                        <li>Modules, local variables</li>
-                    </ul>
-                    <li>camelCase</li>
-                    <ul>
-                        <li>Class</li>
-                    </ul>
+                        <ul>
+                            <li>Modules, methods, local variables</li>
+                        </ul>
+                    <li>PascalCase</li>
+                        <ul>
+                            <li>Classes</li>
+                        </ul>
                     <li>UPPER_CASE</li>
-                    <ul>
-                        <li>Constant values, Global variables</li>
-                    </ul>
+                        <ul>
+                            <li>Constant values, Global variables</li>
+                        </ul>
                 </ul>
             </details>
 
-            <details open>
+            <details>
                 <summary role="button" class="outline contrast">C++</summary>
 
                 <ul>
                     <li>PascalCase</li>
                     <ul>
-                        <li>Class, Struct, Interface, <code style="color: deeppink;">public</code> members</li>
+                        <li>Classes, Structes, Interfaces, <code style="color: deeppink;">public</code> members</li>
                     </ul>
 
                     <li>camelCase</li>
@@ -146,11 +146,8 @@
                         <ul>
                             <code style="color:deeppink">IButtonDown, IButtonUp</code></li>
                         </ul>
-
                     </ul>
                 </ul>
-
-                
             </details>
         </ul>
     </details>
@@ -162,44 +159,44 @@
             <li>Username</li>
             <ul>
                 <li>{FirstName+LastName}-ARA</li>
-                <ul>
-                    <code style="color: deeppink;">SuhjuneYim-ARA, CheolSuKim-ARA, GildongHong-ARA, ...</code>
-                </ul>
+                    <ul>
+                        <li><code style="color: deeppink;">SuhjuneYim-ARA, CheolSuKim-ARA, GildongHong-ARA, ...</code></li>
+                    </ul>
             </ul>
 
-            <h1>Follow Pascal case for the following:</h1>
+            <h4>Follow Pascal case for the following:</h4>
 
             <li>Repository</li>
             <ul>
                 <li>Created by project leader</li>
                 <li>{Objective} or {Project Name}</li>
-                <ul>
-                    <code style="color:deeppink">RealTimeImageProcessing</code>
-                </ul>
+                    <ul>
+                        <li><code style="color:deeppink">RealTimeImageProcessing</code></li>
+                    </ul>
             </ul>
             <li>Branch</li>
             <ul>
                 <details open>
                     <summary><li>5 types of branches : </li></summary>
                     <ul>
-                        <li>main</li>
-                        <ul>Production Code only</ul>
-                        <li>develop / dev</li>
-                        <ul>Development codes</ul>
-                        <li>hot fix</li>
-                        <ul>Created from main <br>
-                            Only merge into main and develop branches</ul>
-                        <li>release</li>
-                        <ul>Created from develop branch <br>
-                            Only commit bug fixes</ul>
-                        <li>feature</li>
-                        <ul>
-                            Created from develop branch <br>
-                            <code style="color:deeppink;">"Feature_" </code> prefix
+                        <li><b>main</b></li> 
+                            <ul>Production code only</ul>
+                        <li><b>develop / dev</b></li>
+                            <ul>Development codes</ul>
+                        <li><b>hot fix</b></li>
+                            <ul>Created from main <br>
+                                Only merge into main and develop branches</ul>
+                        <li><b>release</b></li>
+                            <ul>Created from develop branch <br>
+                                Only commit bug fixes</ul>
+                        <li><b>feature</b></li>
                             <ul>
-                                <li><code style="color:deeppink">Feature_CentreLine, Feature_ImageProcessing, ...</code></li>
+                                Created from develop branch <br>
+                                <code style="color:deeppink;">"Feature_" </code> prefix
+                                <ul>
+                                    <li><code style="color:deeppink">Feature_CentreLine, Feature_ImageProcessing, ...</code></li>
+                                </ul>
                             </ul>
-                        </ul>
                     </ul>
                 </details>
                 
