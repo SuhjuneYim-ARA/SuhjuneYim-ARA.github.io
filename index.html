@@ -3,6 +3,11 @@
         <title>ARA Engineering Coding Convention</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/>
+        
+        <script defer src="main.js"></script>
+        <script src="firebase.js"></script>
+        <script defer type="module" src="signin.js"></script>
+
     </head>
 
     <article class="pico-background-slate-500">
@@ -247,4 +252,18 @@
             </ul>
         </ul>
     </details>
+
+    <dialog id="modal">
+        <article>
+            <h2>Sign in</h2>          
+            <!-- <iframe src="https://ysj0828.github.io/NodeSystem_Demo/" frameborder="0" width="100%" height="300"></iframe> -->
+
+            <input type="text" name="text" placeholder="Username" aria-label="Text" id="userID"/>
+            <input type="password" name="password" placeholder="Password" aria-label="Password" id="userPassword" />
+
+            <footer>
+                <button class="secondary sign-in-button">Sign in</button>
+            </footer>
+        </article>
+    </dialog>
 </html>
